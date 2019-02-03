@@ -1,7 +1,7 @@
 <?php
 
 $meny = [
-    'index.php' => 'Домой',
+    'index.php' => 'Главная',
     'about.php' => 'О нас',
     'contact.php' => 'Контакты',
     'table.php' => 'Таблица умножения',
@@ -9,7 +9,7 @@ $meny = [
 ];
 
 foreach ($meny as $link => $name){
-    echo '<a class="blog-nav-item active" href="index.php">Домой</a>';
+    echo '<a class="blog-nav-item active" href="'. $link .'">' . $name . '</a><br/>';
 }
 
 
